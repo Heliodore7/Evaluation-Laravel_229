@@ -24,8 +24,12 @@ class InscriptionRequest extends FormRequest
         return [
             'nom'=>['required'],
             'prenom'=>['required'],
+               'telephone'=>['required'],
+              
             'email'=>['required','email'],
             'password' => ['required','min:8','confirmed' ],
+ 'photo'=>['required'],
+              
 
         ];
     }
